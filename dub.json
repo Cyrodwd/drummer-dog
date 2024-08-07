@@ -1,12 +1,14 @@
 {
-	"authors": [
-		"Cyrodwd"
-	],
-	"copyright": "Copyright © 2024, Cyrodwd",
-	"dependencies": {
-		"raylib-d": "~>5.0.1"
-	},
-	"description": "Playing the drums with the paw",
-	"license": "MIT",
-	"name": "drummer-dog"
+  "libs" : ["raylib"],
+  "lflags-posix" : ["-L."],
+  "lflags-osx" : ["-rpath", "@executable_path/"],
+  "lflags-linux" : ["-rpath=$$ORIGIN"],
+  "description" : "Playing the drums with the paw",
+  "name" : "drummer-dog",
+  "dependencies" : {
+    "raylib-d" : "~>5.0.1"
+  },
+  "authors" : ["Cyrodwd"],
+  "copyright" : "Copyright © 2024, Cyrodwd",
+  "license" : "MIT"
 }
